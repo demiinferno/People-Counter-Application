@@ -18,9 +18,13 @@ Additionally,a video file to test my implementation, although my code allowed ot
 # IMPLEMENTATION, split into two files:
 
 inference.py - Here, you will load the Intermediate Representation of the model, and work with the Inference Engine to actually perform inference on an input.
+
 main.py - Here, you will
+
 Connect to the MQTT server
+
 Handle the input stream
+
 Use your work from inference.py to perform inference
 Extract the model output, and draw any necessary information on the frame (bounding boxes, semantic masks, etc.)
 Perform analysis on the output to determine the number of people in frame, time spent in frame, and the total number of people counted
