@@ -12,9 +12,10 @@ A UI server - displays a video feed as well as statistics received from the MQTT
 
 A FFmpeg server - receives output image frames including any detected outputs inferred by the model. This is then fed to the UI server.
 
-While the above files are provided complete so that no additional front-end or web services work is required from you, feel free to adjust these as you see fit.
-Additionally, I provided  a video file to test your implementation, although your code should allow for other inputs, such as a single image or webcam stream.
- provided with starter code for your implementation, split into two files:
+While the above files are provided complete so that no additional front-end or web services work is required from me.
+Additionally,a video file to test my implementation, although my code allowed other inputs, such as a single image or webcam stream.
+
+# IMPLEMENTATION, split into two files:
 
 inference.py - Here, you will load the Intermediate Representation of the model, and work with the Inference Engine to actually perform inference on an input.
 main.py - Here, you will:
@@ -25,4 +26,6 @@ Extract the model output, and draw any necessary information on the frame (bound
 Perform analysis on the output to determine the number of people in frame, time spent in frame, and the total number of people counted
 Send statistics to the MQTT server
 Send processed frame to FFmpeg
+
+
 
