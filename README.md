@@ -18,7 +18,7 @@ Additionally,a video file to test my implementation, although my code allowed ot
 # IMPLEMENTATION, split into two files:
 
 inference.py - Here, you will load the Intermediate Representation of the model, and work with the Inference Engine to actually perform inference on an input.
-main.py - Here, you will:
+main.py - Here, you will
 Connect to the MQTT server
 Handle the input stream
 Use your work from inference.py to perform inference
