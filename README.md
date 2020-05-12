@@ -14,5 +14,15 @@ A FFmpeg server - receives output image frames including any detected outputs in
 
 While the above files are provided complete so that no additional front-end or web services work is required from you, feel free to adjust these as you see fit.
 Additionally, I provided  a video file to test your implementation, although your code should allow for other inputs, such as a single image or webcam stream.
+ provided with starter code for your implementation, split into two files:
 
+inference.py - Here, you will load the Intermediate Representation of the model, and work with the Inference Engine to actually perform inference on an input.
+main.py - Here, you will:
+Connect to the MQTT server
+Handle the input stream
+Use your work from inference.py to perform inference
+Extract the model output, and draw any necessary information on the frame (bounding boxes, semantic masks, etc.)
+Perform analysis on the output to determine the number of people in frame, time spent in frame, and the total number of people counted
+Send statistics to the MQTT server
+Send processed frame to FFmpeg
 
