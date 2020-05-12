@@ -25,7 +25,7 @@ Connect to the MQTT server
 
 Handle the input stream
 
-Use your code from inference.py to perform inference
-Extract the model output
+Use your code from inference.py-
+to perform inference extract the model output
 
 
